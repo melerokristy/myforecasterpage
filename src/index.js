@@ -16,7 +16,6 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
-  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -41,13 +40,9 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-  let apiKey = "ee43b7t37do2fbab0535cbaa4d610fad";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&unit=imperial`;
+  let apiKey = "b2a5adcct04b33178913oc335f405433";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(refreshWeather);
-}
-
-function displayForecast(response) {
-  let forecastHtml = "";
 }
 
 function handleSearchSubmit(event) {
@@ -55,13 +50,6 @@ function handleSearchSubmit(event) {
   let searchInput = document.querySelector("#search-form-input");
 
   searchCity(searchInput.value);
-}
-
-function formatDay(timestamp) {
-  let date = new Date(timestamp * 1000);
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-  return days[date.getDay()];
 }
 
 let searchFormElement = document.querySelector("#search-form");
