@@ -20,6 +20,10 @@ header {
   border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
 }
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
 
 .search-form-input {
   background-color: #f9f7fe;
