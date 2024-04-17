@@ -10,8 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
-     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <title>El clima app</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Meteo App</title>
   </head>
   <body>
     <div class="weather-app">
@@ -30,25 +30,24 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="city">Mexico City</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-               <span id="time">Friday 02:22</span>,
-              <span id="description">Clear sky</span>
+              <span id="time"></span>,
+              <span id="description"></span>
               <br />
-              Humidity: <strong id="humidity">60%</strong>, Wind:
-              <strong id="wind-speed">10ml/hr</strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
-            <div id="icon">
-            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" class="weather-app-icon"> 
-            </div>
-            <div class="weather-app-temperature" id="temperature">65</div>
-            <div class="weatehr-app-unit">°F</div>
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
           </div>
         </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
-    <footer>
+
 
     <a href="https://github.com/melerokristy" target="_blank"> created by kristy Melero</a>,
         is
