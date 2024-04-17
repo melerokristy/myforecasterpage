@@ -1,6 +1,8 @@
 body {
   background-color: #f9f7fe;
   font-family: "Roboto", sans-serif;
+  display: block;
+  margin: 8px;
 }
 
 a {
@@ -19,6 +21,8 @@ a {
 header {
   border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
+  display: block;
+  unicode-bidi: isolate;
 }
 
 .search-form-input {
