@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  color: #885df1;
+  color: #c9e752;
 }
 
 .weather-app {
@@ -69,7 +69,7 @@ main {
 }
 
 .weather-app-details strong {
-  color: #f65282;
+  color: #28a5df;
 }
 
 .weather-app-temperature-container {
@@ -114,7 +114,7 @@ main {
 }
 .weather-forecast-temperatures {
   text-align: center;
-  color: #f65282;
+  color: #28a5df;
   margin-top: 10px;
   display: flex;
   justify-content: center;
