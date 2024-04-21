@@ -1,8 +1,10 @@
 body {
   background-color: #f9f7fe;
-  font-family: "Roboto", sans-serif;
   display: block;
   margin: 8px;
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 a {
